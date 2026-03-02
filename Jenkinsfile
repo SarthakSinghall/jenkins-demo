@@ -3,9 +3,9 @@ pipeline {
 
     stages {
 
-        stage('Clone Repo') {
+        stage('Show Files') {
             steps {
-                git 'https://github.com/SarthakSinghall/jenkins-demo.git'
+                sh 'ls -l'
             }
         }
 
